@@ -24,6 +24,8 @@ const Navbar = () => {
     { href: "/contact", label: "Contact Us" },
   ];
 
+  const closeMenu = () => setIsMenuOpen(false); // Function to close the menu
+
   return (
     <div
       className={cn(
@@ -93,8 +95,8 @@ const Navbar = () => {
                 <span>GitHub</span>
               </Link>
               <Link
-                  href="https://www.linkedin.com/in/sarthak-gaikwad-848288529029082003"
-                  target="_blank"
+                href="https://www.linkedin.com/in/sarthak-gaikwad-848288529029082003"
+                target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
                   "flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold",
@@ -132,7 +134,9 @@ const Navbar = () => {
         <div
           className={cn(
             "md:hidden transition-all duration-300 ease-in-out",
-            isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+            isMenuOpen
+              ? "max-h-[400px] opacity-100 pointer-events-auto"
+              : "max-h-0 opacity-0 pointer-events-none"
           )}
         >
           <div
@@ -155,6 +159,7 @@ const Navbar = () => {
                         ? "text-gray-700 dark:text-gray-200"
                         : "text-white"
                     )}
+                    onClick={closeMenu} // Close the menu when a link is clicked
                   >
                     {item.label}
                   </Link>
@@ -170,6 +175,7 @@ const Navbar = () => {
                       ? "bg-blue-600 text-white hover:bg-blue-700"
                       : "bg-white text-blue-600 hover:bg-gray-100"
                   )}
+                  onClick={closeMenu} // Close the menu when a link is clicked
                 >
                   Try Now
                 </Link>
@@ -185,6 +191,7 @@ const Navbar = () => {
                       ? "bg-gray-900 text-white hover:bg-gray-800"
                       : "bg-gray-800 text-white hover:bg-gray-700"
                   )}
+                  onClick={closeMenu} // Close the menu when a link is clicked
                 >
                   <Github className="w-4 h-4" />
                   <span>GitHub</span>
@@ -201,6 +208,7 @@ const Navbar = () => {
                       ? "bg-blue-700 text-white hover:bg-blue-800"
                       : "bg-blue-600 text-white hover:bg-blue-700"
                   )}
+                  onClick={closeMenu} // Close the menu when a link is clicked
                 >
                   <Linkedin className="w-4 h-4" />
                   <span>LinkedIn</span>
