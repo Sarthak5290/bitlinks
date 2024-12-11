@@ -1,5 +1,5 @@
-Here is the revised README.md file:
 Bitlinks - Privacy-Focused URL Shortener
+Project Link: https://new-bitlinks.netlify.app/
 =====================================================
 Bitlinks is a privacy-first URL shortener designed to provide a seamless experience without compromising user privacy. Unlike other URL shorteners, Bitlinks does not require any personal information or login to use. It’s fast, easy to use, and ensures your data stays private.
 Features
@@ -83,4 +83,4 @@ Check out our  for more details.
 Contact
 -------
 Sarthak Gaikwad - 
-Project Link: 
+Project Link: https://new-bitlinks.netlify.app/
