@@ -77,8 +77,8 @@ const Navbar = () => {
               >
                 Try Now
               </Link>
-              <a
-                href="https://github.com"
+              <Link
+                href="https://github.com/Sarthak5290"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
@@ -91,10 +91,10 @@ const Navbar = () => {
               >
                 <Github className="w-4 h-4" />
                 <span>GitHub</span>
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
+              </Link>
+              <Link
+                  href="https://www.linkedin.com/in/sarthak-gaikwad-848288529029082003"
+                  target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
                   "flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold",
@@ -106,7 +106,7 @@ const Navbar = () => {
               >
                 <Linkedin className="w-4 h-4" />
                 <span>LinkedIn</span>
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -162,7 +162,7 @@ const Navbar = () => {
               ))}
               <li className="pt-4 space-y-3">
                 <Link
-                  href="/try-now"
+                  href="/shorten"
                   className={cn(
                     "block text-center px-5 py-2.5 rounded-full font-semibold",
                     "transition-all duration-300 hover:shadow-lg",
@@ -173,7 +173,7 @@ const Navbar = () => {
                 >
                   Try Now
                 </Link>
-                <a
+                <Link
                   href="https://github.com/Sarthak5290"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -188,8 +188,8 @@ const Navbar = () => {
                 >
                   <Github className="w-4 h-4" />
                   <span>GitHub</span>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://www.linkedin.com/in/sarthak-gaikwad-848288529029082003"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -204,7 +204,7 @@ const Navbar = () => {
                 >
                   <Linkedin className="w-4 h-4" />
                   <span>LinkedIn</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
